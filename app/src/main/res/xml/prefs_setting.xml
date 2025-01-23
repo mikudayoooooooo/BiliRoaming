@@ -1,67 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?><!--suppress DeprecatedClassUsageInspection -->
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <PreferenceCategory android:title="@string/main_category">
-        <SwitchPreference
-            android:key="main_func"
-            android:summary="@string/main_func_summary"
-            android:title="@string/main_func_title" />
-
-        <Preference
-            android:dependency="main_func"
-            android:key="custom_server"
-            android:summary="@string/custom_server_summary"
-            android:title="@string/custom_server_title" />
-
-        <SwitchPreference
-            android:dependency="main_func"
-            android:key="allow_download"
-            android:summary="@string/allow_download_summary"
-            android:title="@string/allow_download_title" />
-
-        <SwitchPreference
-            android:dependency="allow_download"
-            android:key="fix_download"
-            android:summary="@string/fix_download_summary"
-            android:title="@string/fix_download_title" />
-
-        <SwitchPreference
-            android:dependency="main_func"
-            android:key="allow_mini_play"
-            android:summary="@string/allow_mini_play_summary"
-            android:title="@string/allow_mini_play_title" />
-    </PreferenceCategory>
-
-    <PreferenceCategory android:title="@string/cdn_category">
-        <ListPreference
-            android:defaultValue="@string/ali_host"
-            android:entries="@array/upos_entries"
-            android:entryValues="@array/upos_values"
-            android:key="upos_host"
-            android:summary="@string/custom_upos_summary"
-            android:title="@string/custom_upos_title" />
-
-        <Preference
-            android:key="test_upos"
-            android:summary="@string/test_upos_summary"
-            android:title="@string/test_upos_title" />
-
-        <SwitchPreference
-            android:key="force_upos"
-            android:summary="@string/force_upos_summary"
-            android:title="@string/force_upos_title" />
-
-        <SwitchPreference
-            android:key="block_pcdn"
-            android:summary="@string/block_pcdn_summary"
-            android:title="@string/block_pcdn_title" />
-
-        <SwitchPreference
-            android:key="block_pcdn_live"
-            android:summary="@string/block_pcdn_live_summary"
-            android:title="@string/block_pcdn_live_title" />
-    </PreferenceCategory>
-
     <PreferenceCategory android:title="@string/beautify_category">
         <SwitchPreference
             android:key="custom_theme"
@@ -221,7 +160,6 @@
 
         <ListPreference
             android:defaultValue="0"
-            android:dependency="main_func"
             android:entries="@array/half_screen_quality_entries"
             android:entryValues="@array/half_screen_quality_values"
             android:key="half_screen_quality"
@@ -230,7 +168,6 @@
 
         <ListPreference
             android:defaultValue="0"
-            android:dependency="main_func"
             android:entries="@array/full_screen_quality_entries"
             android:entryValues="@array/full_screen_quality_values"
             android:key="full_screen_quality"
@@ -376,41 +313,6 @@
             android:key="customize_home_recommend"
             android:summary="@string/customize_home_recommend_summary"
             android:title="@string/customize_home_recommend_title" />
-        <SwitchPreference
-            android:dependency="hidden"
-            android:key="add_bangumi"
-            android:summary="@string/add_bangumi_summary"
-            android:title="@string/add_bangumi_title" />
-        <SwitchPreference
-            android:dependency="hidden"
-            android:key="add_movie"
-            android:summary="@string/add_movie_summary"
-            android:title="@string/add_movie_title" />
-        <SwitchPreference
-            android:dependency="hidden"
-            android:key="add_korea"
-            android:summary="@string/add_korea_summary"
-            android:title="@string/add_korea_title" />
-        <SwitchPreference
-            android:dependency="hidden"
-            android:key="search_area_bangumi"
-            android:summary="@string/search_area_summary"
-            android:title="@string/search_area_title" />
-        <SwitchPreference
-            android:dependency="hidden"
-            android:key="search_area_movie"
-            android:summary="@string/search_area_movie_summary"
-            android:title="@string/search_area_movie_title" />
-        <Preference
-            android:dependency="hidden"
-            android:key="customize_accessKey"
-            android:summary="@string/customize_accessKey_summary"
-            android:title="@string/customize_accessKey_title" />
-        <SwitchPreference
-            android:dependency="hidden"
-            android:key="force_th_comment"
-            android:summary="@string/force_th_comment_summary"
-            android:title="@string/force_th_comment_title" />
         <Preference
             android:dependency="hidden"
             android:key="export_video"
