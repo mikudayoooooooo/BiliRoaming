@@ -48,7 +48,9 @@
     <string name="custom_splash_logo_summary">替换启动Logo为自定义图片（仅支持6.6.0及以上版本，不选择图片则隐藏，延迟生效）</string>
     <string name="beautify_category">美化</string>
     <string name="auto_like_title">自动点赞视频</string>
+    <string name="auto_like_later_title" translatable="false">延后自动点赞的时间</string>
     <string name="auto_like_summary">进入视频详情页时自动点赞</string>
+    <string name="auto_like_later_summary" translatable="false">自动点赞视频的延时(视频时长的20%左右)</string>
     <string name="feature_title">功能设置</string>
     <string name="feature_summary">打开哔哩哔哩客户端，进入【我的】页面，点击【哔哩漫游设置】；旧版本打开侧边栏，长按【设置】</string>
     <string name="feature_dialog">当哔哩漫游被正确激活后，打开哔哩哔哩客户端，进入【我的】页面，就能看到【哔哩漫游设置】；使用旧版本客户端则打开侧边栏，长按【设置】。如果不知道如何激活插件，请直接使用Xpatch版。</string>

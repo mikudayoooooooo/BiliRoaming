@@ -106,6 +106,7 @@ class AutoLikeHook(classLoader: ClassLoader) : BaseHook(classLoader) {
     }
 
     private suspend fun timeup() {
+        if (!sPrefs.getBoolean("auto_like_later",true) || timelength == -1L || progress == -1L ) return
         var needTime = ceil(timelength * 0.2).toLong()
         if (progress < needTime) {
             Log.d("needTime:$needTime")

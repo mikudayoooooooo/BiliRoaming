@@ -76,6 +76,11 @@
             android:key="auto_like"
             android:summary="@string/auto_like_summary"
             android:title="@string/auto_like_title" />
+        <SwitchPreference
+            android:dependency="auto_like"
+            android:key="auto_like_later"
+            android:title="@string/auto_like_title"
+            android:summary="@string/auto_like_later_title" />
 
         <SwitchPreference
             android:key="enable_av"
